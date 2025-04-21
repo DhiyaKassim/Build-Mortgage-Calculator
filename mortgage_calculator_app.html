@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mortgage Calculator Application</title>
+    <script src="calculator.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        .content {
+            padding: 20px;
+        }
+        table {
+            background-color: #CCFFCC;
+            margin: auto;
+            border-collapse: collapse;
+            width: 500px;
+        }
+        td {
+            padding: 10px;
+        }
+        .form-table input {
+            margin: 4px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Calculator</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1 style="color: red; text-align: center;">The XHTML Web Page with Mortgage Calculator</h1>
+        <p style="text-align: center;">This page uses a calculator embedded in our template layout.</p>
+        <div align="center"><font color="#666666" size="+2">Home Mortgage Calculator</font></div>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <td width="228" align="center" valign="middle">
+                    <div align="justify"><font color="#666666">
+                        To use the Home Mortgage Calculator enter the amount of the mortgage, the interest of the loan, and the number of years.
+                        Then click on the "Calculate" button to see an estimate of your monthly payment.
+                    </font></div>
+                </td>
+                <td width="246" align="center" valign="middle">
+                    <form name="Form1">
+                        <table class="form-table">
+                            <tr><td>Amount: <input name="Amount" type="text"></td></tr>
+                            <tr><td>Rate: <input name="Rate" type="text"></td></tr>
+                            <tr><td>Years: <input name="Years" type="text"></td></tr>
+                            <tr><td><input type="button" value="Calculate" onclick="mortCalc(this.form)"></td></tr>
+                            <tr><td>Payment: <input name="Payment" type="text"></td></tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
